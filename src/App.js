@@ -1,7 +1,15 @@
 import React, { Component } from "react";
 import "./App.css";
+import DisplayResults from "./DisplayResults";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      weight: "",
+      height: ""
+    };
+  }
   render() {
     return (
       <div className="App">
@@ -21,6 +29,7 @@ class App extends Component {
             onChange={e => this.setState({ height: e.target.value })}
           />
         </div>
+        <DisplayResults weight={this.state.weight} height={this.state.height} />
       </div>
     );
   }
