@@ -14,13 +14,18 @@ class DisplayResults extends Component {
         const height = this.props.height;
         const method = this.props.methodName;
         this.setState({ bmiMessage: bmiCalculation(weight, height, method) });
+        document.getElementById("message").className += "block";
     }
 
     render() {
         return (
-        <div>
-            <button onClick={() => this.calculate()}>Caclulate BMI</button>
-            <div>{this.state.bmiMessage}</div>
+        <div className="p-4">
+            <button 
+            className="p-2 m-2 w-1/6 b-2 border-2 hover:border-teal rounded-full bg-teal-light hover:bg-white  text-white hover:text-black font-bold"
+            onClick={() => this.calculate()}>Caclulate BMI</button>
+            <div className="flex justify-center">
+                <div id="message" className="border-2 bg-teal-light p-4 m-4 rounded-lg text-white font-bold hidden">{this.state.bmiMessage}</div>
+            </div>
         </div>
         );
     }
