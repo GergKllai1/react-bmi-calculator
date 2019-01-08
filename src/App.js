@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import './css/tailwind.css';
 import DisplayResults from "./DisplayResults";
 
 class App extends Component {
