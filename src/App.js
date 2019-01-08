@@ -56,7 +56,7 @@ class App extends Component {
             />
             <br />
             <button
-              className="p-2 m-2 w-1/6 b-2 border-2 hover:border-teal rounded-full bg-teal-light hover:bg-white  text-white hover:text-black font-bold"
+              className="w-48 p-2 m-2 b-2 border-2 hover:border-teal rounded-full bg-teal-light hover:bg-white  text-white hover:text-black font-bold"
               onClick={() => this.mehtodChange()}
             >
               {this.state.methodName}
