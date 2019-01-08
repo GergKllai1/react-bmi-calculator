@@ -27,11 +27,9 @@ class App extends Component {
     return (
       <div className="App flex flex-col w-full text-center bg-grey-lightest min-h-screen font-sans text-lg text-grey-darkest">
         <div className="flex-1">
-          <div className="bg-teal-lightest border-2 pb-2">
-            <UndrawCalculator />
-            <h2 className="">BMI Calculator</h2>
-          </div>
-          <div>
+          <h2 className="bg-teal-lightest border-2 pb-2">BMI Calculator</h2>
+          <UndrawCalculator />
+          <div className="mt-4">
             <label>
               Weight {this.state.methodName === "Metric" ? "(kgs)" : "(pounds)"}
             </label>

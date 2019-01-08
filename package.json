@@ -27,7 +27,10 @@
   ],
   "devDependencies": {
     "autoprefixer": "^9.4.4",
+    "jest-dev-server": "^3.7.0",
+    "jest-puppeteer": "^3.7.0",
     "postcss-cli": "^6.1.1",
+    "puppeteer": "^1.11.0",
     "tailwindcss": "^0.7.3"
   }
 }
