@@ -24,7 +24,9 @@ class App extends Component {
     return (
       <div className="App">
         <div>
-          <label>Weight(kg)</label>
+          <label>
+            Weight {this.state.methodName === "Metric" ? "(kgs)" : "(pounds)"}
+          </label>
           <input
             name="weight"
             value={this.state.weight}
@@ -32,7 +34,9 @@ class App extends Component {
           />
         </div>
         <div>
-          <label>Height(cm)</label>
+          <label>
+            Height {this.state.methodName === "Metric" ? "(cms)" : "(inches)"}
+          </label>
           <input
             name="weight"
             value={this.state.height}

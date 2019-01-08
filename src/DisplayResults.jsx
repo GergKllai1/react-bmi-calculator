@@ -24,6 +24,6 @@ class DisplayResults extends Component {
         </div>
         );
     }
-    }
+}
 
 export default DisplayResults;
