@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./App.css";
 import "./css/tailwind.css";
 import DisplayResults from "./DisplayResults";
-import { UndrawCalculator } from "react-undraw-illustrations";
 import Footer from "./Footer";
 
 class App extends Component {
@@ -28,15 +27,14 @@ class App extends Component {
       <div className="App flex flex-col w-full text-center bg-grey-lightest min-h-screen font-sans text-lg text-grey-darkest">
         <div className="flex-1">
           <h2 className="bg-teal-lightest border-2 pb-2">BMI Calculator</h2>
-          <UndrawCalculator />
           <div className="mt-4">
             <label>
               Weight {this.state.methodName === "Metric" ? "(kgs)" : "(pounds)"}
             </label>
             <br />
             <input
-              className="text-center bg-grey-light border-2 focus:bg-white p-1 rounded-lg"
               name="weight"
+              className="text-center bg-grey-light border-2 focus:bg-white p-1 rounded-lg"
               value={this.state.weight}
               onChange={e => this.setState({ weight: e.target.value })}
             />
@@ -47,8 +45,8 @@ class App extends Component {
             </label>
             <br />
             <input
+              name="height"
               className="text-center bg-grey-light focus:bg-white p-1 rounded-lg"
-              name="weight"
               value={this.state.height}
               onChange={e => this.setState({ height: e.target.value })}
             />
