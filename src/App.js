@@ -3,7 +3,7 @@ import "./App.css";
 import "./css/tailwind.css";
 import DisplayResults from "./DisplayResults";
 import Footer from "./Footer";
-import { UndrawCalculator } from 'react-undraw-illustrations'
+import { UndrawCalculator } from "react-undraw-illustrations";
 
 class App extends Component {
   constructor(props) {
@@ -54,6 +54,7 @@ class App extends Component {
             />
             <br />
             <button
+              id="methodchange"
               className="w-48 p-2 m-2 b-2 border-2 hover:border-teal rounded-full bg-teal-light hover:bg-white  text-white hover:text-black font-bold"
               onClick={() => this.mehtodChange()}
             >
