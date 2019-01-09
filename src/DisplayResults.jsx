@@ -21,6 +21,7 @@ class DisplayResults extends Component {
     return (
       <div className="p-4">
         <button
+          id="calculate"
           className="w-48 p-2 m-2  b-2 border-2 hover:border-teal rounded-full bg-teal-light hover:bg-white  text-white hover:text-black font-bold"
           onClick={() => this.calculate()}
         >
