@@ -3,6 +3,7 @@ import "./App.css";
 import "./css/tailwind.css";
 import DisplayResults from "./DisplayResults";
 import Footer from "./Footer";
+import { UndrawCalculator } from 'react-undraw-illustrations'
 
 class App extends Component {
   constructor(props) {
@@ -27,6 +28,7 @@ class App extends Component {
       <div className="App flex flex-col w-full text-center bg-grey-lightest min-h-screen font-sans text-lg text-grey-darkest">
         <div className="flex-1">
           <h2 className="bg-teal-lightest border-2 pb-2">BMI Calculator</h2>
+          <UndrawCalculator />
           <div className="mt-4">
             <label>
               Weight {this.state.methodName === "Metric" ? "(kgs)" : "(pounds)"}
